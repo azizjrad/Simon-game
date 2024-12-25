@@ -1,0 +1,389 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+footer {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #FEF2BF;
+}
+
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.fade-in-out {
+  animation: fadeInOut 300ms ease-in-out;
+}
+
+@keyframes fadeInOut {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px;
+  color: #FEF2BF;
+}
+h3 {
+  text-align: left;
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+}
+
+p {
+  font-size: 2rem;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  color: #FEF2BF;
+}
+
+li {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #FEF2BF
+}
+
+.rule-p {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #FEF2BF;
+}
+
+/* accueil h1 styling */
+#typing-effect {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #FEF2BF;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #FEF2BF;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  background-color: #1087e2;
+  padding: 15px 0;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.logo-container {
+  text-align: left;
+  justify-content: left;
+}
+
+.logoESEN {
+  background: #FEF2BF;
+  margin-left: 5px;
+  width: 150px;
+  height: auto;
+}
+
+.nav-item {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  color: #FFD700;
+}
+
+#play-button {
+  background-color: #1087e2;
+  font-family: 'Press Start 2P', cursive;
+  border: none;
+  color: #FEF2BF;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+
+#play-button:hover {
+  transform: scale(1.1);
+  background-color: #3e8e41;
+  box-shadow: 0px 10px rgba(0,0,0,0.5);
+}
+
+
+.home-footer{
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  margin-top: 20px;
+}
+
+
+
+/* leaderboard.html styles */
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #9BBCDD;
+  color: #FEF2BF;
+  font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+  color: #9BBCDD;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+a:hover {
+  font-size: 1.3em;
+  text-decoration: underline solid #002D40;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* Contact style */
+.contact-form {
+  text-align: left;
+  margin-left: 450px;
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #1087e2;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0a6baf;
+}
+
+
+@media  (max-width: 500px) {
+  #level-title {
+    font-size: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  body {
+
+    font-size: 0.5rem;
+  }
+
+
+  #typing-effect {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .logoESEN {
+    width: 100px;
+  }
+
+  #play-button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    width: 180px;
+  }
+
+  .home-footer {
+    font-size: 1rem;
+  }
+
+
+  li {
+    font-size: 16px; /* Reduce font size for list items */
+  }
+
+  .rule-p {
+    font-size: 1.5rem; /* Reduce font size for rule paragraph */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+  table {
+    width: 100%;  /* Make table width 100% for smaller screens */
+    font-size: 16px;  /* Reduce font size for readability */
+  }
+
+  th, td {
+    padding: 8px;  /* Adjust padding for smaller screens */
+  }
+
+  a {
+    font-size: 16px;  /* Reduce font size for links */
+    margin-right: 20px; /* Reduce margin for links */
+  }
+
+  a:hover {
+    font-size: 1.2em; /* Adjust hover effect font size for smaller screens */
+  }
+
+
+
+
+  .contact-form {
+    margin-left: 20px;  /* Reduces the margin to make it fit smaller screens */
+    margin-right: 20px; /* Reduces the margin to make it fit smaller screens */
+    padding: 20px;      /* Reduces padding for smaller screens */
+    width: 90%;         /* Adjusts width for smaller screens */
+    font-size: 1rem;    /* Reduces font size for smaller screens */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;  /* Reduces padding in input and textarea */
+    font-size: 1rem; /* Reduces font size for smaller screens */
+  }
+
+  .contact-form button {
+    padding: 10px; /* Reduces button padding */
+    font-size: 1rem; /* Reduces button font size */
+  }
+}
+
