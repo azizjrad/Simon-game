@@ -53,7 +53,6 @@ footer {
   color: #FEF2BF;
 }
 
-
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
@@ -125,7 +124,6 @@ li {
   }
 }
 
-
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -184,14 +182,37 @@ li {
   box-shadow: 0px 10px rgba(0,0,0,0.5);
 }
 
+#back-button {
+  background-color: #1087e2;
+  font-family: "Press Start 2P", cursive;
+  border: none;
+  color: #fef2bf;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-right: 1200px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+#back-button:hover {
+  transform: scale(1.1);
+  background-color: #3e8e41;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.5);
+}
 
 .home-footer{
   font-family: 'Press Start 2P', cursive;
   color: #FEF2BF;
   margin-top: 20px;
 }
-
-
 
 /* leaderboard.html styles */
 table {
@@ -329,6 +350,10 @@ a:hover {
     width: 180px;
   }
 
+  #back-button {
+  margin-left: 57px;
+  }
+
   .home-footer {
     font-size: 1rem;
   }
@@ -367,9 +392,6 @@ a:hover {
   a:hover {
     font-size: 1.2em; /* Adjust hover effect font size for smaller screens */
   }
-
-
-
 
   .contact-form {
     margin-left: 20px;  /* Reduces the margin to make it fit smaller screens */
