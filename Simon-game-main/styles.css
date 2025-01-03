@@ -1,0 +1,486 @@
+:root {
+  --primary-color: #011F3F;
+  --secondary-color: #FEF2BF;
+  --highlight-color: #1087e2;
+  --hover-color: #3e8e41;
+  --font-family-main: 'Press Start 2P', cursive;
+  --font-family-alt: sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, p, li, footer, .nav-item, .home-footer {
+  font-family: var(--font-family-main);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h3, .rule-p {
+  text-align: left;
+}
+
+p {
+  font-size: 2rem;
+  margin: 4rem 0 1rem;
+}
+
+li {
+  font-family: var(--font-family-alt);
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+footer, .home-footer {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+}
+
+#level-title {
+  font-size: 3rem;
+  margin: 5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 1.25rem;
+  display: inline-block;
+  height: 12.5rem;
+  width: 12.5rem;
+  border: 0.625rem solid black;
+  border-radius: 20%;
+}
+
+#play-button, #back-button {
+  background-color: var(--highlight-color);
+  font-family: var(--font-family-main);
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 0.938rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#play-button {
+  font-size: 1.25rem;
+  margin: 1.875rem 0 6.25rem;
+}
+
+#back-button {
+  font-size: 0.625rem;
+  margin: 1.25rem auto; 
+  display: block; 
+}
+
+#play-button:hover, #back-button:hover {
+  transform: scale(1.1);
+  background-color: var(--hover-color);
+  box-shadow: 0 0.625rem rgba(0, 0, 0, 0.5);
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 1.25rem white;
+  background-color: grey;
+}
+
+.fade-in-out {
+  animation: fadeInOut 300ms ease-in-out;
+}
+
+@keyframes fadeInOut {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#typing-effect {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.125rem solid var(--secondary-color);
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from {
+    border-right-color: var(--secondary-color);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--highlight-color);
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+
+.logoESEN {
+  background: var(--secondary-color);
+  width: 9.375rem;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.7rem; 
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  order: 2;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  color: #FFD700;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  order: 3;
+}
+
+.hamburger span {
+  height: 0.25rem;
+  width: 1.75rem;
+  background: var(--secondary-color);
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 0.063rem solid #9BBCDD;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+a {
+  font-size: 1.25rem;
+  color: #9BBCDD;
+  text-decoration: none;
+  margin-right: 2.5rem;
+}
+
+a:hover {
+  font-size: 1.3em;
+  text-decoration: underline solid #002D40;
+  padding: 0.188rem 0;
+}
+
+.contact-form {
+  text-align: left;
+  margin: 6.25rem auto;
+  background-color: var(--secondary-color);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 37.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.375rem;
+  font-size: 1.1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: var(--highlight-color);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0a6baf;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 5rem 0 1.25rem;
+  }
+
+  .btn {
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+
+  #play-button, #back-button {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.625rem 0;
+  }
+
+  .nav-item {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .logoESEN {
+    width: 7.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--highlight-color);
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 1rem 0;
+    width: 100%;
+    border-top: 1px solid var(--secondary-color);
+  }
+
+  .nav-item:first-child {
+    border-top: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  table {
+    width: 90%;
+    font-size: 1.125rem;
+  }
+
+  a {
+    font-size: 1.125rem;
+    margin-right: 1.25rem;
+  }
+
+  .contact-form {
+    margin: 3.125rem auto;
+    padding: 1.875rem;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    padding: 0.625rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #level-title {
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 0.625rem;
+    width: 80%;
+  }
+
+  .btn {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  body {
+    font-size: 0.5rem;
+  }
+
+  #typing-effect {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 3.75rem 0 1.25rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 0;
+  }
+
+  .logo-container {
+    margin-bottom: 0.625rem;
+  }
+
+  .nav-item {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .logoESEN {
+    width: 6.25rem;
+  }
+
+  #play-button, #back-button {
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 0.625rem;
+    font-size: 0.625rem;
+    width: 11.25rem;
+  }
+
+  .home-footer {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .rule-p {
+    font-size: 0.8rem;
+    margin: 1.875rem 0 1.25rem;
+  }
+
+  table {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    margin-right: 1.25rem;
+  }
+
+  a:hover {
+    font-size: 1.2em;
+  }
+
+  .contact-form {
+    margin: 1.25rem;
+    padding: 1.25rem;
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+

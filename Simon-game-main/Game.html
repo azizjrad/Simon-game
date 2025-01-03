@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="typing-effect" style="margin-top: 20px; margin-bottom: 20px"></h1>
+      <br />
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="esen" class="logoESEN"
+          /></a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" class="nav-item">Accueil</a>
+          <a href="Rules.html" class="nav-item">Règles</a>
+          <a href="Leaderboard.html" class="nav-item">Classement</a>
+          <a href="Contact.html" class="nav-item">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <h1 id="level-title">Touchez pour commencer</h1>
+    <div class="container">
+      <div lass="row">
+        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+      <button id="back-button" onclick="window.location.href='index.html'">
+        Arrière
+      </button>
+
+      <footer>Réalisé par Jrad Aziz G6 & Riahi Fedi G5</footer>
+    </div>
+    <script src="game.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

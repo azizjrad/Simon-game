@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">   
+     <title>Easter Egg</title>
+    
+</head>
+<body>
+    <div class="box">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjFxZjRkdHZ4YjRoN3p1c3BpMjljOWg0NmllZXNrM29reHF0OXd1MCZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/Jmlv4CUO1qWlGWJf3J/giphy.webp" alt="Easter Egg">
+        <audio id="background-audio" loop muted>
+            <source src="./sounds/ester.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script>
+        document.addEventListener("click", () => {
+          const audio = document.getElementById("background-audio");
+          if (audio.paused) {
+            audio.muted = false;
+            audio.play();
+          }
+        });
+    </script>
+</body>
+<footer class="home-footer"><a href="index.html">Réalisé par Jrad Aziz G6 & Riahi Fedi G5</a></footer>
+</html>

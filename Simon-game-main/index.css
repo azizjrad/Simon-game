@@ -1,0 +1,81 @@
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--highlight-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.p-menu {
+  font-family: var(--font-family-alt);
+  text-align: left;
+  font-size: 1.25rem;
+  margin: 1.875rem 0 1.25rem;
+}
+
+button {
+  background-color: var(--highlight-color);
+  font-family: var(--font-family-main);
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 0.938rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.25rem;
+  margin: 1.875rem 0 6.25rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: var(--hover-color);
+  box-shadow: 0 0.625rem rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  .p-menu {
+    font-size: 1.125rem;
+  }
+
+  button {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
+
+  .p-menu {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}

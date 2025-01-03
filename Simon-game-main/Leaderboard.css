@@ -1,0 +1,23 @@
+.leaderboard-container {
+  text-align: center;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  border: 0.063rem solid #9BBCDD;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+
